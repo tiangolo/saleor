@@ -20,6 +20,7 @@ import { LocaleProvider } from "./components/Locale";
 import { MessageManager } from "./components/messages";
 import { ConfigurationSection } from "./configuration";
 import "./i18n";
+import MenuSection from "./menus";
 import PageSection from "./pages";
 import ProductSection from "./products";
 import theme from "./theme";
@@ -81,6 +82,7 @@ render(
                         <Route path="/categories" component={CategorySection} />
                         <Route path="/pages" component={PageSection} />
                         <Route path="/products" component={ProductSection} />
+                        <Route path="/menus" component={MenuSection} />
                         <Route
                           exact
                           path="/configuration"
